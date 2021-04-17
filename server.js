@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const port = 3000;
+require('./config/database');
+
 const indexRouter = require('./routes/index');
 
 const app = express();
