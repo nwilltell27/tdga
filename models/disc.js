@@ -14,10 +14,22 @@ const discSchema = new Schema({
         type: String,
         required: true
     },
-    speed: Number,
-    glide: Number, 
-    turn: Number,
-    fade: Number,
+    speed: {
+        type: Number,
+        required: true
+    },
+    glide: {
+        type: Number,
+        required: true
+    },
+    turn: {
+        type: Number,
+        required: true
+    },
+    fade: {
+        type: Number,
+        required: true
+    },
     reviews: [String]
 }, {
     timestamps: true
