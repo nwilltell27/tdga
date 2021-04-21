@@ -9,13 +9,16 @@ module.exports = {
 function index(req, res) {
   Disc.find({}, function(err, discs) {
     res.render('discs/index', {
+      title: 'All Discs',
       discs
     });
   });
 }
 
 function newDisc(req, res) {
-  res.render('discs/new');
+  res.render('discs/new', {
+    title: 'Add a Disc'
+  });
 }
 
 function create(req, res) {
