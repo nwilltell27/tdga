@@ -1,12 +1,21 @@
 const Disc = require('../models/disc');
 
 module.exports = {
-    new: newDisc,
-    create,
+  index,
+  new: newDisc,
+  create,
 };
 
+function index(req, res) {
+  Disc.find({}, function(err, discs) {
+    res.render('discs/index', {
+      discs
+    });
+  });
+}
+
 function newDisc(req, res) {
-    res.render('discs/new');
+  res.render('discs/new');
 }
 
 function create(req, res) {

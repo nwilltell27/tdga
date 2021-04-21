@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terrible Disc Golf Association | All Discs</title>
+</head>
+<body>
+    <h1>Check Out These DISCS!</h1>
+    <article>
+        <% discs.forEach(function(disc) { %>
+            <h2><%= disc.title %></h2>
+            <h3><%= disc.brand %></h3>
+            <h3><%= disc.discType %></h3>
+        <% }); %>
+    </article>
+</body>
+</html>
