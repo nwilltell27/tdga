@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Terrible Disc Golf Association | Add a Disc</title>
 </head>
+
 <body>
     <h1>Add a Disc!</h1>
     <form action="/discs" method="POST">
-    <label>Title:
+        <label>Title:</label>
         <input type="text" name="title">
-    </label>
-    <label>Brand:
+
+        <label>Brand:</label>
         <input type="text" name="brand">
-    </label>
-    <label>Primary Use:
-        <input type="text" name="discType">
-    </label>
-    <label>Speed:
+
+        <label>Primary Use:</label>
+        <select name="discType">
+            <option value="Distance Driver">Distance Driver</option>
+            <option value="Fairway Driver">Fairway Driver</option>
+            <option value="Mid-Range">Mid-Range</option>
+            <option value="Putt & Approach">Putt & Approach</option>
+        </select>
+
+        <label>Speed:</label>
         <input type="text" name="speed">
-    </label>
-    <label>Glide:
+
+        <label>Glide:</label>
         <input type="text" name="glide">
-    </label>
-    <label>Turn:
+
+        <label>Turn:</label>
         <input type="text" name="turn">
-    </label>
-    <label>Fade:
+
+        <label>Fade:</label>
         <input type="text" name="fade">
-    </label>
-    <input type="submit" value="Add Disc">
+
+        <input type="submit" value="Add Disc">
     </form>
 </body>
+
 </html>
