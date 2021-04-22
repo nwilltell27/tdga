@@ -1,11 +1,13 @@
 <%- include('../partials/header') %>
 
+<% discs.forEach(function(disc) { %>
+<a href="/discs/<%= disc._id %>">
     <article>
-        <% discs.forEach(function(disc) { %>
-            <h2><%= disc.title %></h2>
-            <h3><%= disc.brand %></h3>
-            <h3><%= disc.discType %></h3>
-        <% }); %>
+        <h2><%= disc.title %></h2>
+        <h3><%= disc.brand %></h3>
+        <h3><%= disc.discType %></h3>
     </article>
+</a>
+<% }); %>
 
 <%- include('../partials/footer') %>

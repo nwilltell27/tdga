@@ -4,6 +4,9 @@ module.exports = {
   index,
   new: newDisc,
   create,
+  show,
+  edit,
+  update,
 };
 
 function index(req, res) {
@@ -27,6 +30,30 @@ function create(req, res) {
   }
   Disc.create(req.body, function (err, disc) {
     if (err) return res.redirect('/discs/new');
+    res.redirect('/discs');
+  });
+}
+
+function show(req, res) {
+  Disc.findById(req.params.id, function(err, disc) {
+    res.render('discs/show', { 
+      title: disc.title, 
+      disc 
+    });
+  });
+}
+
+function edit(req, res) {
+  Disc.findById(req.params.id, function(err, disc) {
+    res.render('discs/edit', {
+      title: 'Edit Disc Details',
+      disc
+    });
+  });
+}
+
+function update(req, res) {
+  Disc.findByIdAndUpdate(req.params.id, req.body, function(err) {
     res.redirect('/discs');
   });
 }

@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<section>
+    <h2>Additional Information</h2>
+    <p>Brand: <%= disc.brand %></p>
+    <p>Primary Use: <%= disc.discType %></p>
+    <p>Speed: <%= disc.speed %></p>
+    <p>Glide: <%= disc.glide %></p>
+    <p>Turn: <%= disc.turn %></p>
+    <p>Fade: <%= disc.fade %></p>
+    <button><a href="/discs/<%= disc._id %>/edit">Edit Disc Details</a></button>
+</section>
+
+<%- include('../partials/footer') %>
