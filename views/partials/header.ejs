@@ -9,10 +9,12 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/">TDGA</a>
-        <a href="/discs" <%- title === 'All Discs' ? 'class="active"' : '' %>>All Discs</a>
-        <a href="/discs/new" <%- title === 'Add Disc' ? 'class="active"' : '' %>>Add Disc</a>
-    </nav>
+    <header>
+        <a href="/"><img id="imgTDGA" src="/images/1 TDGA_white logo no text.png" alt="Terrible Disc Golf Association"></a>
+        <nav>
+            <a class="navLinks" href="/discs" <%- title === 'All Discs' ? 'class="active"' : '' %>>All Discs</a>
+            <a class="navLinks" href="/discs/new" <%- title === 'Add Disc' ? 'class="active"' : '' %>>Add Disc</a>
+        </nav>
+    </header>
     <main>
         <h1><%= title %></h1>

@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb+srv://admin:abc1234@cluster0.snefq.mongodb.net/TDGA?retryWrites=true&w=majority';
+const connectionURI = process.env.DATABASE_URI;
 
-mongoose.connect(connectionString, {
+mongoose.connect(connectionURI, {
     useNewUrlParser: true, 
     useCreateIndex: true, 
     useFindAndModify: false, 
