@@ -47,11 +47,27 @@ nav > a {
 main {
     flex-grow: 1;
     margin: auto;
+    /* may need to change below later */
+    text-align: center;
 }
 
 h1 {
     margin: auto;
-    font-size: 1.5em;
+}
+
+/* --- Disc Cards on 'All Discs' Page --------------------------------- */
+
+#discCards {
+    display: flex;
+}
+
+#discCards > a {
+    padding: 20px;
+    margin: 15px;
+    text-decoration: none;
+    border: 3px solid #77113c;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #201f1f;
 }
 
 /* ==================================================================== */
