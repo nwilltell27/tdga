@@ -7,6 +7,7 @@ module.exports = {
   show,
   edit,
   update,
+  delete: deleteDisc,
 };
 
 function index(req, res) {
@@ -54,6 +55,12 @@ function edit(req, res) {
 
 function update(req, res) {
   Disc.findByIdAndUpdate(req.params.id, req.body, function(err) {
+    res.redirect('/discs');
+  });
+}
+
+function deleteDisc(req, res) {
+  Disc.findByIdAndDelete(req.params.id, req.body, function(err) {
     res.redirect('/discs');
   });
 }
