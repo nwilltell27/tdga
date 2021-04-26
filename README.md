@@ -24,7 +24,7 @@ Welcome to the Terrible Disc Golf Association. This website allows users to crea
 ![TDGA-Discs](./public/images/TDGA-Discs.png)
 
 ## Getting Started
-[Click here to become a TDGA Member today!]()
+[Click here to become a TDGA Member today!](https://tdga.herokuapp.com/)
 
 ## Future Enhancements
 1. Create _Players_ page.
