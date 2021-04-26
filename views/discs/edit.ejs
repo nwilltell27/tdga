@@ -28,9 +28,6 @@
     <input type="text" name="fade" value="<%= disc.fade %>">
 
     <input type="submit" value="Update Disc Details">
-    <form action="/discs/<%= disc._id %>?_method=DELETE" method="POST"">
-        <input type="submit" value="Delete Disc">
-    </form>
 </form>
 
 <%- include('../partials/footer') %>
