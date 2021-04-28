@@ -1,17 +1,22 @@
 <%- include('../partials/header') %>
 
-<section>
-    <h2>Additional Information</h2>
-    <p>Brand: <%= disc.brand %></p>
-    <p>Primary Use: <%= disc.discType %></p>
-    <p>Speed: <%= disc.speed %></p>
-    <p>Glide: <%= disc.glide %></p>
-    <p>Turn: <%= disc.turn %></p>
-    <p>Fade: <%= disc.fade %></p>
-    <button><a href="/discs/<%= disc._id %>/edit">Edit Disc Details</a></button>
-    <form action="/discs/<%= disc._id %>?_method=DELETE" method="POST"">
-        <input type="submit" value="Delete Disc">
-    </form>
+<section id="discShowPage">
+    <div>Brand: </div>
+    <div><%= disc.brand %></div>
+    <div>Primary Use: </div>
+    <div><%= disc.discType %></div>
+    <div>Speed: </div>
+    <div><%= disc.speed %></div>
+    <div>Glide: </div>
+    <div><%= disc.glide %></div>
+    <div>Turn: </div>
+    <div><%= disc.turn %></div>
+    <div>Fade: </div>
+    <div><%= disc.fade %></div>
 </section>
+<button><a href="/discs/<%= disc._id %>/edit">Edit Disc Details</a></button>
+<form action="/discs/<%= disc._id %>?_method=DELETE" method="POST"">
+    <input type="submit" value="Delete Disc">
+</form>
 
 <%- include('../partials/footer') %>

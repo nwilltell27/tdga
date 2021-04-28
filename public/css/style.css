@@ -1,3 +1,8 @@
+/* --- Imported Fonts ------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* ==================================================================== */
+/* --- WEBSITE CSS ---------------------------------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -91,6 +96,7 @@ h1 {
     grid-gap: 10px;
     grid-template-columns: repeat(2, minmax(auto, 10rem));
     text-align: left;
+    font-weight: bold;
 }
 
 .discDetails input[type="submit"] {
@@ -98,6 +104,24 @@ h1 {
     width: 10rem;
     margin: auto;
   }
+
+/* --- Disc Show Page ------------------------------------------------- */
+
+#discShowPage {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: .5rem;
+    text-align: left;
+}
+
+#discShowPage div:nth-child(odd) {
+    font-weight: bold;
+  }
+
+.deleteBtn {
+    background-color: red;
+    color: #fff;
+}
 
 /* ==================================================================== */
 /* --- Media Queries -------------------------------------------------- */
