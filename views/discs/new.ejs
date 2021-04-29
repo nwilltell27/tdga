@@ -1,33 +1,35 @@
 <%- include('../partials/header') %>
 
-<form class="discDetails" action="/discs" method="POST">
-    <label>Title:</label>
-    <input type="text" name="title">
+<div class="formAlign">
+    <form class="discDetails" action="/discs" method="POST">
+        <label>Title:</label>
+        <input type="text" name="title">
 
-    <label>Brand:</label>
-    <input type="text" name="brand">
+        <label>Brand:</label>
+        <input type="text" name="brand">
 
-    <label>Primary Use:</label>
-    <select name="discType">
-        <option value="Distance Driver">Distance Driver</option>
-        <option value="Fairway Driver">Fairway Driver</option>
-        <option value="Mid-Range">Mid-Range</option>
-        <option value="Putt & Approach">Putt & Approach</option>
-    </select>
+        <label>Primary Use:</label>
+        <select name="discType">
+            <option value="Distance Driver">Distance Driver</option>
+            <option value="Fairway Driver">Fairway Driver</option>
+            <option value="Mid-Range">Mid-Range</option>
+            <option value="Putt & Approach">Putt & Approach</option>
+        </select>
 
-    <label>Speed:</label>
-    <input type="text" name="speed">
+        <label>Speed:</label>
+        <input type="text" name="speed">
 
-    <label>Glide:</label>
-    <input type="text" name="glide">
+        <label>Glide:</label>
+        <input type="text" name="glide">
 
-    <label>Turn:</label>
-    <input type="text" name="turn">
+        <label>Turn:</label>
+        <input type="text" name="turn">
 
-    <label>Fade:</label>
-    <input type="text" name="fade">
+        <label>Fade:</label>
+        <input type="text" name="fade">
 
-    <input type="submit" value="Add Disc">
-</form>
+        <input type="submit" value="Add Disc">
+    </form>
+</div>
 
 <%- include('../partials/footer') %>

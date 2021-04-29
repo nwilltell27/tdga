@@ -1,33 +1,35 @@
 <%- include('../partials/header') %>
 
-<form class="discDetails" action="/discs/<%= disc._id %>?_method=PUT" method="POST">
-    <label>Title:</label>
-    <input type="text" name="title" value="<%= disc.title %>">
+<div class="formAlign">
+    <form class="discDetails" action="/discs/<%= disc._id %>?_method=PUT" method="POST">
+        <label>Title:</label>
+        <input type="text" name="title" value="<%= disc.title %>">
 
-    <label>Brand:</label>
-    <input type="text" name="brand" value="<%= disc.brand %>">
+        <label>Brand:</label>
+        <input type="text" name="brand" value="<%= disc.brand %>">
 
-    <label>Primary Use:</label>
-    <select name="discType">
-        <option value="Distance Driver">Distance Driver</option>
-        <option value="Fairway Driver">Fairway Driver</option>
-        <option value="Mid-Range">Mid-Range</option>
-        <option value="Putt & Approach">Putt & Approach</option>
-    </select>
+        <label>Primary Use:</label>
+        <select name="discType">
+            <option value="Distance Driver">Distance Driver</option>
+            <option value="Fairway Driver">Fairway Driver</option>
+            <option value="Mid-Range">Mid-Range</option>
+            <option value="Putt & Approach">Putt & Approach</option>
+        </select>
 
-    <label>Speed:</label>
-    <input type="text" name="speed" value="<%= disc.speed %>">
+        <label>Speed:</label>
+        <input type="text" name="speed" value="<%= disc.speed %>">
 
-    <label>Glide:</label>
-    <input type="text" name="glide" value="<%= disc.glide %>">
+        <label>Glide:</label>
+        <input type="text" name="glide" value="<%= disc.glide %>">
 
-    <label>Turn:</label>
-    <input type="text" name="turn" value="<%= disc.turn %>">
+        <label>Turn:</label>
+        <input type="text" name="turn" value="<%= disc.turn %>">
 
-    <label>Fade:</label>
-    <input type="text" name="fade" value="<%= disc.fade %>">
+        <label>Fade:</label>
+        <input type="text" name="fade" value="<%= disc.fade %>">
 
-    <input type="submit" value="Update Disc Details">
-</form>
+        <input type="submit" value="Update Disc Details">
+    </form>
+</div>
 
 <%- include('../partials/footer') %>

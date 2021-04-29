@@ -1,5 +1,5 @@
 /* --- Imported Fonts ------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 /* ==================================================================== */
 /* --- WEBSITE CSS ---------------------------------------------------- */
@@ -9,23 +9,23 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Comfortaa, Helvetica;
     margin: 0;
     display: grid;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #77113c;
 }
 
 header,
 footer {
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 5px 1px #535252;
+    /* box-shadow: 1px 1px 5px 1px #535252; */
 }
 
 header {
     padding-left: 15px;
-    height: 3em;
+    height: 4em;
     background-color: #77113c;  
 }
 
@@ -33,6 +33,9 @@ footer {
     justify-content: center;
     height: 3em;
     font-size: .75em;
+    margin-top: 20px;
+    background-color: #77113c;
+    color: #fff;
 }
 
 #imgTDGA {
@@ -48,6 +51,7 @@ nav > a {
     text-decoration: none;
     color: #fff;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 main {
@@ -55,41 +59,61 @@ main {
     margin: auto;
     /* may need to change below later */
     text-align: center;
+    background-color: #fff;
+    width: 900px;
+    border-radius: 25px;
+    padding-bottom: 40px;
 }
 
 h1 {
-    margin: auto;
+    margin: 25px auto 0 auto;
     padding: 15px;
+    font-weight: 700;
 }
+
+
 
 /* --- Home Page ------------------------------------------------------ */
 
 #inPageLinks {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 #inPageLinks > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+    background-color: #77113c;
+    color: #fff;
+    height: 250px;
+    border-radius: 25px;
+    width: 750px;
 }
 
 /* --- Disc Cards on 'All Discs' Page --------------------------------- */
 
 #discCards {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #discCards > a {
     padding: 20px;
     margin: 15px;
     text-decoration: none;
-    border: 3px solid #77113c;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 0px #535252;
-    background-color: #a7c1f1;
+    background-color: #77113c;
+    color: #fff;
 }
 
-/* --- Add Disc Page -------------------------------------------------- */
+/* --- Add/Edit Disc Page --------------------------------------------- */
 
 .discDetails {
     display: grid;
@@ -99,11 +123,22 @@ h1 {
     font-weight: bold;
 }
 
-.discDetails input[type="submit"] {
+.discDetails input[type='submit'] {
     grid-column: span 2;
     width: 10rem;
     margin: auto;
-  }
+}
+
+.formAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.formAlign input[type='submit'] {
+    margin-top: 10px;
+}
 
 /* --- Disc Show Page ------------------------------------------------- */
 
@@ -112,15 +147,18 @@ h1 {
     grid-template-columns: auto auto;
     grid-gap: .5rem;
     text-align: left;
+    width: fit-content;
+    margin: 0 auto 10px auto;
 }
 
 #discShowPage div:nth-child(odd) {
     font-weight: bold;
-  }
+}
 
-.deleteBtn {
+#deleteBtn {
     background-color: red;
     color: #fff;
+    margin-top: 10px;
 }
 
 /* ==================================================================== */
