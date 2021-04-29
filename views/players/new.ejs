@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<div class="formAlign">
+    <form class="details" action="/players" method="POST">
+        <label>Name:</label>
+        <input type="text" name="pName">
+
+        <label>Skill Level:</label>
+        <select name="skillLevel">
+            <option value="Terrible">Terrible</option>
+            <option value="Ok">Ok</option>
+            <option value="Pretty Good">Pretty Good</option>
+            <option value="Paul McBeth">Paul McBeth</option>
+        </select>
+
+        <input type="submit" value="Add Player">
+    </form>
+</div>
+
+<%- include('../partials/footer') %>

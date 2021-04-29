@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <div class="formAlign">
-    <form class="discDetails" action="/discs/<%= disc._id %>?_method=PUT" method="POST">
+    <form class="details" action="/discs/<%= disc._id %>?_method=PUT" method="POST">
         <label>Title:</label>
         <input type="text" name="title" value="<%= disc.title %>">
 

@@ -113,9 +113,9 @@ h1 {
     color: #fff;
 }
 
-/* --- Add/Edit Disc Page --------------------------------------------- */
+/* --- Add/Edit Pages ------------------------------------------------- */
 
-.discDetails {
+.details {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, minmax(auto, 10rem));
@@ -123,7 +123,7 @@ h1 {
     font-weight: bold;
 }
 
-.discDetails input[type='submit'] {
+.details input[type='submit'] {
     grid-column: span 2;
     width: 10rem;
     margin: auto;

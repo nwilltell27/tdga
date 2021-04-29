@@ -8,6 +8,7 @@ require('./config/database');
 
 const indexRouter = require('./routes/index');
 const discsRouter = require('./routes/discs');
+const playersRouter = require('./routes/players');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
 app.use('/discs', discsRouter);
+app.use('/players', playersRouter);
 
 app.listen(port, function() {
     console.log(`Express is listening on port:${port}`);
